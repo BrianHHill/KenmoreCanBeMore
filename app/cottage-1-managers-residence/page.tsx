@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function CottageOnePage() {
   return <main className="site-shell detail-page">
-    <header className="site-header"><div className="brand-mark"><span>KC</span><div><strong>Kenmore</strong><small>Can Be More</small></div></div><Link className="back-link" href="/">← National Trust Listings</Link></header>
+    <header className="site-header"><Link className="brand-mark" href="/"><span>KC</span><div><strong>Kenmore</strong><small>Can Be More</small></div></Link><Link className="back-link" href="/national-trust-listings">← National Trust Listings</Link></header>
     <article className="record">
       <p className="eyebrow">National Trust Register · Record 02</p>
       <h1>Cottage 1 —<br /><em>Managers Residence</em></h1>
