@@ -4,7 +4,7 @@ export default function HomePage() {
   return <main className="site-shell home-page">
     <header className="site-header">
       <Link className="brand-mark" href="/"><span>KC</span><div><strong>Kenmore</strong><small>Can Be More</small></div></Link>
-      <nav aria-label="Primary navigation"><Link href="/national-trust-listings">National Trust Register</Link><Link href="/kenmore-advocacy">Kenmore Advocacy</Link><Link href="/media-articles">Media Articles</Link><a href="#about">About the project</a></nav>
+      <nav aria-label="Primary navigation"><Link href="/national-trust-listings">National Trust Register</Link><Link href="/kenmore-advocacy">Kenmore Advocacy</Link><Link href="/media-articles">Media Articles</Link><Link href="/kenmore-history">History of Kenmore</Link><a href="#about">About the project</a></nav>
     </header>
     <section className="hero home-hero">
       <p className="eyebrow">Community research archive · Goulburn, NSW</p>
