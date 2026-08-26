@@ -1,0 +1,17 @@
+import Link from 'next/link'
+
+const articles = [
+  { year: '2023', items: [{ date: 'Nov 2023', title: 'A collaborative hill climb to breathe life into Kenmore', href: 'https://aboutregional.com.au/a-collaborative-hill-climb-to-breathe-life-into-kenmore/438498/' }] },
+  { year: '2021', items: [
+    { date: 'Dec 2021', title: 'Goulburn Kenmore Hospital security bill to be sent owner', href: 'https://www.abc.net.au/news/2021-12-14/goulburn-kenmore-hospital-security-bill-to-be-sent-owner/100697800' },
+    { date: 'Dec 2021', title: 'A disgrace: council GM urges strong action over Kenmore Hospital', href: 'https://www.goulburnpost.com.au/story/7551523/a-disgrace-council-gm-urges-strong-action-over-kenmore-hospital/' },
+    { date: '2021', title: 'Heritage-listed Kenmore Hospital in Goulburn goes up in flames', href: 'https://the-riotact.com/heritage-listed-kenmore-hospital-in-goulburn-goes-up-in-flames/503746' },
+    { date: '2021', title: 'Two teenage boys dealt with over Kenmore Hospital fire in Goulburn', href: 'https://the-riotact.com/two-teenage-boys-dealt-with-over-kenmore-hospital-fire-in-goulburn/506030' },
+    { date: 'October 2021', title: 'Abandoned psychiatric hospital destroyed by fire', href: 'https://www.abc.net.au/news/2021-10-18/abandoned-psychiatric-hospital-destroyed-by-fire/100547104' },
+  ] },
+  { year: '2020', items: [{ date: 'Nov 2020', title: 'Kenmore Hospital media coverage', href: 'https://aboutregional.com.au/' }] },
+]
+
+export default function MediaArticlesPage() {
+  return <main className="site-shell"><header className="site-header"><Link className="brand-mark" href="/"><span>KC</span><div><strong>Kenmore</strong><small>Can Be More</small></div></Link><nav aria-label="Primary navigation"><Link href="/">Home</Link><Link href="/national-trust-listings">National Trust Register</Link><Link href="/kenmore-advocacy">Kenmore Advocacy</Link></nav></header><section className="hero"><p className="eyebrow">Community research · Media archive</p><h1>Media<br /><em>Articles</em></h1><p className="hero-copy">A chronological record of reporting and public discussion about Kenmore Hospital and its future.</p></section><div className="content-grid"><aside className="sidebar"><p className="side-label">In this archive</p><p className="side-count">{articles.reduce((total, group) => total + group.items.length, 0).toString().padStart(2, '0')} <span>articles</span></p><div className="rule" /><p className="side-note">Follow the story through local, regional and national reporting.</p></aside><section className="listing-panel"><div className="section-intro"><p className="eyebrow">The clippings</p><h2>News and commentary</h2><p>Each title opens the original external article in a new tab. Links are preserved from the source archive.</p></div><div className="listing-list">{articles.map((group) => <section key={group.year}><p className="eyebrow" style={{ margin: '28px 0 10px' }}>{group.year}</p>{group.items.map((article, index) => <a className="listing featured" href={article.href} target="_blank" rel="noreferrer" key={article.href}><span className="listing-number">{String(index + 1).padStart(2, '0')}</span><span><strong>{article.title}</strong><small className="listing-note">{article.date}</small></span><span className="arrow">↗</span></a>)}</section>)}</div></section></div><footer><span>Kenmore Can Be More</span><span>Community Research Archive · Media</span></footer></main>
+}
