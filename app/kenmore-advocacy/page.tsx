@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 const records = [
+  { title: 'Kenmore AntiPatterns', href: '/kenmore-advocacy/kenmore-anti-patterns', note: 'Recurring patterns affecting the Kenmore gardens site' },
   { title: '2023 Advocacy — Brian Hill', href: '/kenmore-advocacy/2023-brian-hill', note: 'Correspondence, media and liaison activity' },
   { title: '2023 Advocacy — Leone Morgan', href: '/kenmore-advocacy/2023-leone-morgan', note: 'Letters and responses concerning the site history' },
 ]
