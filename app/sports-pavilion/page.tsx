@@ -1,0 +1,13 @@
+import Link from 'next/link'
+
+export default function SportsPavilionPage() {
+  return <main className="site-shell detail-page">
+    <header className="site-header"><Link className="brand-mark" href="/"><span>KC</span><div><strong>Kenmore</strong><small>Can Be More</small></div></Link><Link className="back-link" href="/national-trust-listings">← National Trust Listings</Link></header>
+    <article className="record">
+      <p className="eyebrow">National Trust Register · Record 37</p>
+      <h1>Sports<br /><em>Pavilion</em></h1>
+      <div className="record-meta"><span>Community Research</span><span>Created by Sage Hill · Last modified 21 November 2023</span></div>
+      <div className="record-layout"><div className="record-main"><p className="lead">The following Description, Reason for Listing and Photo are sourced directly from the National Trust Register records, reproduced here for reference and accessibility.</p><section><h2>Description</h2><p>The date of erection of the Pavilion is not known, but its appearance suggests that it probably belongs to the period before is a timber framed single World War 1. It -storeyed rectangular structure with a simple gabled hip roof. In the open centre section, the rear wall of which is fenestrated, there is a tiered floor with tiered seating. On each side are rooms including toilets and offices, with panelled doors. The walls are sheeted with painted rebated weatherboards and the roof is covered with painted corrugated iron.</p></section><section><h2>Reason for Listing</h2><p>Part of a significant Federation period institutional complex of fine buildings and landscape. A modest but interesting example of utilitarian architecture which harmonises with the rest of the campus. Possibly designed in the office of the first Government Architect.</p></section><section><h2>Photos</h2><p>Photo record reproduced from the National Trust Register.</p></section></div><aside className="attachments"><p className="side-label">Record files</p><div className="attachment"><span className="file-icon">JPG</span><div><strong>Sports pavillion.jpg</strong><small>Image / reference photograph</small></div></div><div className="attachment"><span className="file-icon">PDF</span><div><strong>Kenmore Hospital 29 - sports pavillion.pdf</strong><small>National Trust record document</small></div></div></aside></div><div className="source-note"><strong>Source</strong><span>National Trust Register — Community Research export.</span></div>
+    </article><footer><span>Kenmore Can Be More</span><span>Community Research Archive · 2023</span></footer>
+  </main>
+}
